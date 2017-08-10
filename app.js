@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(flash());
 
 //Connecting to my database - demo
-mongoose.connect('mongodb://localhost/demo');
+mongoose.connect(process.env.db_URL);
 const Comment = require("./models/comments");
 const Camp = require("./models/campgrounds");
 const User = require("./models/user");
@@ -57,5 +57,5 @@ app.use('/', indexRoutes);
 // Server
 app.listen(process.env.PORT, process.env.IP, () => {
   console.log('YelpCamp server has started');
-  console.log('Preview your app at: ' + 'https://bootcamp-abialbonpaul.c9users.io/');
+  console.log('Preview your app at: ' + process.env.preview_URL);
 });
