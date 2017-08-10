@@ -1,7 +1,14 @@
-### To Do
+## Learning Node
+This was my first project on node. This was completed on June 2017.
+This untimately made me decide that I would become a full stack Node developer. 
 
-1. ~~Set up campground delete~~
-2. ~~Show comments not deleting with campgrounds~~
-3. ~~Delete campgrounds along with comments in them~~
+#### Yelp-Camp
 
-4. ~~See if it can be done with a **hook** placed in the campground schema~~
+This project uses:
+- Express Routing
+- EJS templating
+- Mongoose JS
+- MongoDB store
+- Local passport authentication
+- Middlewares
+- Flash messages
