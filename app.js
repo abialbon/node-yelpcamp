@@ -30,7 +30,7 @@ const User = require("./models/user");
 
 //Passport configuration
 app.use(require("express-session")({
-  secret: 'I am a rich billionaire',
+  secret: process.env.sessionSecret,
   resave: false,
   saveUninitialized: true,
 }));
